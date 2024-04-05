@@ -1,0 +1,23 @@
+GET http://localhost:8000/getall
+
+###
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+    "id": "123",
+    "password": "123"
+}
+
+###
+POST http://localhost:8000/updatelocation
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEyMyIsImlhdCI6MTcxMjMyOTE4MCwiZXhwIjoxNzEyMzMyNzgwfQ.FqzAcQ0ubAgZzJHW-cXI-XiwduFG2kcRhKgW0JhHIag
+
+{
+    "countryname": "india",
+    "place": "punjab",
+    "id": "ffff"
+}
+
+
